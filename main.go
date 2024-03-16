@@ -204,7 +204,3 @@ func rndmToken(len int) int64 {
 	n, _ := rand.Read(b)
 	return int64(n)
 }
-
-func Ignore(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
-	http.ServeFile(w, r, "favicon.png")
-}
